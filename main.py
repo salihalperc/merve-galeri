@@ -25,7 +25,7 @@ def home():
     form = LoginForm()
     if form.validate_on_submit() and request.method=="POST":
         if form.email.data == f_email and form.email.data == f_password:
-            return redirect(url_for("galeri"))
+            return render_template("index.html")
 
     return render_template("login.html", form=form)
 
