@@ -24,7 +24,7 @@ class LoginForm(FlaskForm):
 def home():
     form = LoginForm()
     if form.validate_on_submit() and request.method=="POST":
-        if form.email.data == f_email and form.email.data == f_password:
+        if form.email.data == f_email and form.password.data == f_password:
             return render_template("index.html")
 
     return render_template("login.html", form=form)
