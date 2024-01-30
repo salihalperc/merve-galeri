@@ -1,0 +1,163 @@
+*{
+    /*border: 2px solid red;*/
+
+}
+body{
+    margin: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: black;
+}
+p{
+    font-size: 50px;
+}
+header{
+    height: 200px;
+    width: auto;
+    margin: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 5px;
+}
+header > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.seçenekler{
+    height: 100px;
+    margin: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-basis: auto;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.black{
+    height: 50px;
+    display: flex;
+    flex-basis: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+}
+img{
+    width: 200px;
+    height: auto;
+}
+.box1 {
+    display: flex;
+    align-content: space-between;
+    margin: 20px;
+    width: 200px;
+    height: auto;
+    border: 2px solid #e90303;
+    align-items: flex-start;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box1:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+ .card {
+	 color: inherit;
+	 cursor: pointer;
+	 width: calc(33% - 3rem);
+	 min-width: calc(33% - 3rem);
+	 height: 400px;
+	 min-height: 400px;
+	 perspective: 1000px;
+	 margin: 1rem auto;
+	 position: relative;
+}
+
+ .front, .back {
+	 display: flex;
+	 border-radius: 6px;
+	 background-position: center;
+	 background-size: cover;
+
+	 text-align: center;
+	 justify-content: center;
+	 align-items: center;
+	 position: absolute;
+	 height: 100%;
+	 width: 100%;
+	 -webkit-backface-visibility: hidden;
+	 backface-visibility: hidden;
+	 transform-style: preserve-3d;
+	 transition: ease-in-out 600ms;
+}
+ .front {
+	 background-size: cover;
+	 padding: 2rem;
+	 font-size: 1.618rem;
+	 font-weight: 600;
+	 color: #fff;
+	 background-color: white;
+	 overflow: hidden;
+	 font-family: Poppins, sans-serif;
+}
+ .front:before {
+	 position: absolute;
+	 display: block;
+	 content: '';
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 background: white;
+	 opacity: 0.25;
+	 z-index: -1;
+}
+ .card:hover .front {
+	 transform: rotateY(180deg);
+}
+ .card:nth-child(even):hover .front {
+	 transform: rotateY(-180deg);
+}
+ .back {
+	 background: white;
+	 transform: rotateY(-180deg);
+	 padding: 0 2em;
+}
+ .card:hover .back {
+	 transform: rotateY(0deg);
+}
+ .card:nth-child(even) .back {
+	 transform: rotateY(180deg);
+}
+ .card:nth-child(even):hover .back {
+	 transform: rotateY(0deg);
+}
